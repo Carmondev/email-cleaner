@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  email-cleaner:
+    build: .
+    container_name: emal-cleaner
+    env_file:
+      - .env
+    restart: on-failure
